@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderSummaryFragment">
+
+    <TextView
+        android:id= "@+id/orderSummaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "30sp"
+        android:textColor="@color/pink_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/order_summary"/>
+
+    <TextView
+        android:id= "@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft ="20dp"
+        android:textSize = "25sp"
+        android:textColor="@color/brown_color"
+        android:textStyle = "bold"
+        app:layout_constraintTop_toBottomOf="@id/orderSummaryText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/quantity"
+        />
+
+    <TextView
+        android:id = "@+id/quantityInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft ="25dp"
+        android:textSize = "20sp"
+        android:textStyle = "bold"
+        android:textColor="@color/light_pink_color"
+        app:layout_constraintTop_toBottomOf="@id/quantityText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/_0_cupcakes"
+        />
+
+    <TextView
+        android:id= "@+id/flavorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft ="20dp"
+        android:textSize = "25sp"
+        android:textColor="@color/brown_color"
+        android:textStyle = "bold"
+            app:layout_constraintTop_toBottomOf="@id/quantityInfoText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/flavor"
+        />
+
+    <TextView
+        android:id = "@+id/flavorInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft ="25dp"
+        android:textSize = "20sp"
+        android:textStyle = "bold"
+        android:textColor="@color/light_pink_color"
+        app:layout_constraintTop_toBottomOf="@id/flavorText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/empty"
+        />
+
+    <TextView
+        android:id= "@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft ="20dp"
+        android:textSize = "25sp"
+        android:textColor="@color/brown_color"
+        android:textStyle = "bold"
+        app:layout_constraintTop_toBottomOf="@id/flavorInfoText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/pickup_date"
+        />
+
+    <TextView
+        android:id = "@+id/dateInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft ="25dp"
+        android:textSize = "20sp"
+        android:textStyle = "bold"
+        android:textColor="@color/light_pink_color"
+        app:layout_constraintTop_toBottomOf="@id/dateText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "@string/empty"
+        />
+
+    <TextView
+        android:id= "@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize = "20sp"
+        app:layout_constraintTop_toBottomOf="@id/dateInfoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent
+"
+        tools:text = "@string/subtotal_10"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/light_pink_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priceText" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/brown_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cancelButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

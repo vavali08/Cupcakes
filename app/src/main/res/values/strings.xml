@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cupcakes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="birthday_cake">Birthday Cake</string>
+    <string name="carrot_cake">Carrot Cake</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="choose_a_flavor">Choose a Flavor!!</string>
+    <string name="order_cupcakes">Order Cupcakes</string>
+    <string name="_1_cupcake">1 Cupcake</string>
+    <string name="_6_cupcakes">6 Cupcakes</string>
+    <string name="_12_cupcakes">12 Cupcakes</string>
+    <string name="price">Price</string>
+    <string name="subtotal_10">Subtotal: $10</string>
+    <string name="cancel">Cancel</string>
+    <string name="continue_button">continue</string>
+    <string name="choose_a_pickup_date">Choose a Pickup Date</string>
+    <string name="march_7">March 7</string>
+    <string name="march_8">March 8</string>
+    <string name="march_9">March 9</string>
+    <string name="march_10">March 10</string>
+    <string name="march_11">March 11</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="quantity">Quantity</string>
+    <string name="_0_cupcakes">0 Cupcakes</string>
+    <string name="flavor">Flavor</string>
+    <string name="empty" />
+    <string name="pickup_date">Pickup Date</string>
+    <string name="share">Share</string>
+</resources>

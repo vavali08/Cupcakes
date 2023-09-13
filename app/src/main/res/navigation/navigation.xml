@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.vavali.cupcakes.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_flavorsFragment"
+            app:destination="@id/flavorsFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flavorsFragment"
+        android:name="edu.vavali.cupcakes.FlavorsFragment"
+        android:label="fragment_flavors"
+        tools:layout="@layout/fragment_flavors">
+
+
+        <action
+            android:id="@+id/action_flavorsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="Order"
+            app:argType="edu.vavali.cupcakes.CupcakeOrder"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_flavorsFragment_to_dateFragment"
+            app:destination="@id/dateFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateFragment"
+        android:name="edu.vavali.cupcakes.DateFragment"
+        android:label="fragment_date"
+        tools:layout="@layout/fragment_date" >
+
+        <argument
+            android:name="orderSummary"
+            app:argType="edu.vavali.cupcakes.CupcakeOrder"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_dateFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+        <action
+            android:id="@+id/action_dateFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="edu.vavali.cupcakes.OrderSummaryFragment"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary" >
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="order"
+            app:argType="edu.vavali.cupcakes.CupcakeOrder"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

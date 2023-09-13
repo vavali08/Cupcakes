@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlavorsFragment">
+
+
+
+    <TextView
+        android:id= "@+id/chooseFlavorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "30sp"
+        android:textColor="@color/pink_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/choose_a_flavor"/>
+
+    <RadioGroup
+        android:id= "@+id/flavorButtons"
+        app:layout_constraintTop_toBottomOf="@id/chooseFlavorText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    >
+
+        <RadioButton
+            android:id= "@+id/chocolateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/chocolate"/>
+
+        <RadioButton
+            android:id= "@+id/vanillaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/vanilla"/>
+
+        <RadioButton
+            android:id= "@+id/birthdayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/birthday_cake"/>
+
+        <RadioButton
+            android:id= "@+id/carrotButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/carrot_cake"/>
+
+        <RadioButton
+            android:id= "@+id/strawberryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/strawberry"/>
+    </RadioGroup>
+
+    <TextView
+        android:id= "@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize = "20sp"
+        app:layout_constraintTop_toBottomOf="@id/flavorButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent
+"
+        tools:text = "@string/subtotal_10"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/light_pink_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priceText" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/brown_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cancelButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
